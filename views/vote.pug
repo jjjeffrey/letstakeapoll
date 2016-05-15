@@ -7,10 +7,10 @@ html
     h1
       a(href='/') Let's Take a Poll
     h2 #{title}
-    form(method='post' action='/' + id + '/vote')
+    form(method='post' action='/' + id + '/vote' style='display: inline')
       each val, index in choices
         input(type='radio' name='choice' id='choice-' + index value=index)
         label(for='choice-' + index) #{val.choice}
         br
       input(type='submit' value='Vote')
-      a(href='/' + id + '/results' style='margin-left: 4px') See results
+    a(href='/' + id + '/results' style='margin-left: 8px') See results
