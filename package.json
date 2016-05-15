@@ -1,0 +1,16 @@
+{
+  "name": "letstakeapoll",
+  "version": "0.1.0",
+  "description": "A website for taking polls",
+  "main": "index.js",
+  "author": "Joseph Jeffrey",
+  "license": "MIT",
+  "repository": "git://github.com/jjjeffrey/letstakeapoll.git",
+  "homepage": "https://github.com/jjjeffrey/letstakeapoll",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "pug": "^2.0.0-alpha7",
+    "redis": "^2.6.0-2"
+  }
+}

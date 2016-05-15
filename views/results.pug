@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Let's Take a Poll
+  body
+    h1
+      a(href='/') Let's Take a Poll
+    h2 #{title}
+    ul
+      each val in choices
+        li #{val.choice} #{val.votes}
+    a(href='/' + id) Go back
