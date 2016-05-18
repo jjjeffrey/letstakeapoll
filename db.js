@@ -81,7 +81,7 @@ exports.create = function(req, res, next) {
     }
     req.id = reply;
     var args = ['poll:' + reply, 'title', req.body.title];
-    var choices = req.body.choices.split('\n');
+    var choices = req.body.choices.split('\r\n');
     for (var i = 0; i < choices.length; i++) {
       args.push('choice:' + i, choices[i], 'votes:' + i, '0');
     }
